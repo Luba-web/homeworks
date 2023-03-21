@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  width: 1290px;
+  padding: 0 240px;
+  margin: auto;
+}
+
+.btn {
+  margin-left: 10px;
+}
+
+.active {
+  background-color: #515151;
+  color: #fff;
+}
