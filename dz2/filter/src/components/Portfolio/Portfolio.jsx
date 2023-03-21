@@ -30,7 +30,7 @@ export class Portfolio extends Component {
           selected={this.state.selected}
           onSelectFilter={this.filter}
         />
-        <ul className="main">
+        <ul className='main'>
           {this.state.arr.map((item, index) => {
             return (
               <ProjectList

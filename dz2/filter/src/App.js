@@ -3,7 +3,7 @@ import { Portfolio } from './components/Portfolio/Portfolio';
 
 function App() {
   return (
-    <div>
+    <div className="block">
       <Portfolio />
     </div>
   );

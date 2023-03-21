@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+  justify-content: flex-end;
+}
+
+.container-list {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  gap: 3px;
+}
+
+.container-card {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  gap: 30px;
+}
