@@ -6,16 +6,17 @@ export const DropdownList = () => {
   const [state, setState] = useState(arr[0]);
 
   const handleClick = (e) => {
-    setState(e.target.innerText);
+    const activeText = e.target.textContent;
+    setState(activeText);
   };
 
   return (
     <ul data-id="dropdown" className="dropdown" onClick={handleClick}>
-      {arr.map((item) => {
+      {arr.map((item, index) => {
         if (item === state) {
-          return <DropdownItem item={item} state={true} />;
+          return <DropdownItem item={item} state={true} key={index} />;
         }
-        return <DropdownItem item={item} state={false} />;
+        return <DropdownItem item={item} state={false} key={index} />;
       })}
     </ul>
   );
