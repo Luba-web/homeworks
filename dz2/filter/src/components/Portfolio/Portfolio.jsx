@@ -22,7 +22,6 @@ export class Portfolio extends Component {
 
   render() {
     const filtersList = ['All', 'Websites', 'Flayers', 'Business Cards'];
-
     return (
       <>
         <Toolbar
@@ -30,7 +29,7 @@ export class Portfolio extends Component {
           selected={this.state.selected}
           onSelectFilter={this.filter}
         />
-        <ul className='main'>
+        <ul className="main">
           {this.state.arr.map((item, index) => {
             return (
               <ProjectList
